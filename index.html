@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noise Level Analysis</title>
+    
+    <!-- Google AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics (Global Site Tag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Other scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +30,17 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+        }
+        .header-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header-image img {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
@@ -150,6 +177,39 @@
         .file-upload-label:hover {
             background-color: #2980b9;
         }
+        .ad-container {
+            margin: 25px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .ad-leaderboard {
+            width: 728px;
+            height: 90px;
+            margin: 0 auto;
+        }
+        .ad-banner {
+            width: 468px;
+            height: 60px;
+            margin: 0 auto;
+        }
+        .ad-responsive {
+            width: 100%;
+            height: auto;
+            min-height: 90px;
+        }
+        @media (max-width: 768px) {
+            .ad-leaderboard {
+                width: 320px;
+                height: 50px;
+            }
+            .ad-banner {
+                width: 300px;
+                height: 50px;
+            }
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -157,7 +217,42 @@
     </style>
 </head>
 <body>
+    <!-- Top Ad Banner -->
+    <div class="ad-container">
+        <div class="ad-leaderboard">
+            <!-- AdSense Leaderboard -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <img src="image.png" alt="Noise Level Analysis Tool">
+    </div>
+    
     <h1>Noise Level Analysis Tool</h1>
+    
+    <!-- Responsive Ad -->
+    <div class="ad-container">
+        <div class="ad-responsive">
+            <!-- AdSense Responsive Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
     
     <div class="instructions">
         <h3>Instructions:</h3>
@@ -180,6 +275,20 @@
         <div style="margin-top:20px;">
             <button onclick="processFile()">Analyze Data</button>
             <button class="simulate-btn" onclick="simulateData()">Simulate Data</button>
+        </div>
+    </div>
+    
+    <!-- Middle Ad Banner -->
+    <div class="ad-container">
+        <div class="ad-banner">
+            <!-- AdSense Banner -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:468px;height:60px"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
     
@@ -263,6 +372,22 @@
         
         <div style="text-align: center; margin-top: 30px;">
             <button id="downloadBtn" class="download-btn" onclick="downloadResults()">Download Full Report</button>
+        </div>
+    </div>
+    
+    <!-- Bottom Ad Banner -->
+    <div class="ad-container">
+        <div class="ad-responsive">
+            <!-- AdSense Responsive Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
     
@@ -754,6 +879,16 @@
                 console.error(error);
             }
         }
+    </script>
+    
+    <!-- Google AdSense Auto Ads (Optional) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+            enable_page_level_ads: true
+        });
     </script>
 </body>
 </html>
